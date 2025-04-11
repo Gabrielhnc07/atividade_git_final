@@ -17,7 +17,7 @@ programa {
       leia(op)
 
       se (op == 0) {
-        escreva("Saindo...\n")
+        escreva("Saindo do programa...\n")
         pare
       }
 
@@ -37,7 +37,9 @@ programa {
             escreva(num1, " - ", num2, " = ", num1 - num2, "\n") // Subtração
             pare
 
-          // case 3 (Multiplicação será feita pelo andrei)
+          caso 3:
+            escreva(num1, " * ", num2, " = ", num1 * num2, "\n" ) // Multiplicação
+            pare
 
           caso 4: 
             se (num2 != 0) {
@@ -61,7 +63,7 @@ programa {
             escreva("Erro! Informe um valor presente no menu.\n")
         }
       } senao {
-        escreva("Operação invalida\n")
+        escreva("Operação invalida!\n")
       }
 
       escreva("\n")
