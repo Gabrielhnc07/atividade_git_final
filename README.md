@@ -140,6 +140,66 @@ eu fiz o gitpull após o Gabriel ter feito o commit da mudança do código
 ## Comandos utilizados
 Todos os comandos foram executados via terminal utilizando chave SSH:
 ### Comandos de Gabriel Casarini
+compuni@Lab6m37 MINGW64 ~
+$ rm -f ~/.ssh/id_rsa*
+
+compuni@Lab6m37 MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "gabrielcasarini@edu.unifil.br"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/compuni/.ssh/id_rsa):
+Enter passphrase for "/c/Users/compuni/.ssh/id_rsa" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/compuni/.ssh/id_rsa
+Your public key has been saved in /c/Users/compuni/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:lyK9Kh+Ux3YF3Rgfaey9Aj0jQBc+AzEYv6V7HDL0lkk gabrielcasarini@edu.unifil.br
+The key's randomart image is:
++---[RSA 4096]----+
+|       .+=o+o=.. |
+|       ...=.o.=. |
+|         o.Eoo.. |
+|       +. *==+. .|
+|      + S=+*o o .|
+|     . + =* .. . |
+|      . .. o  .  |
+|    .  o  .      |
+|     oo          |
++----[SHA256]-----+
+
+compuni@Lab6m37 MINGW64 ~
+$ eval "$(ssh-agent -s)"
+Agent pid 1431
+
+compuni@Lab6m37 MINGW64 ~
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/compuni/.ssh/id_rsa (gabrielcasarini@edu.unifil.br)
+
+compuni@Lab6m37 MINGW64 ~
+$ clip < ~/.ssh/id_rsa.pub
+
+compuni@Lab6m37 MINGW64 ~
+$
+ssh -T git@github.com
+Hi Gabrielhnc07! You've successfully authenticated, but GitHub does not provide shell access.
+
+compuni@Lab6m37 MINGW64 ~
+$ git clone git@github.com:Gabrielhnc07/atividade_git_final.git
+fatal: destination path 'atividade_git_final' already exists and is not an empty
+ directory.
+
+compuni@Lab6m37 MINGW64 ~
+$ git clone git@github.com:Gabrielhnc07/atividade_git_final.git
+Cloning into 'atividade_git_final'...
+remote: Enumerating objects: 30, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 30 (delta 5), reused 9 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (30/30), 11.96 KiB | 532.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+compuni@Lab6m37 MINGW64 ~
+$ cd atividade_git_final
+
 compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
 $ git status
 On branch main
