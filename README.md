@@ -1,14 +1,20 @@
 # Atividade Avaliativa - Git Colaborativo com Portugol
 
 ## Integrantes do grupo
-- Fulano da Silva
-- Ciclana Souza  
-- Beltrano Gomes
+- Andrei Miguel
+- Erick Fukumoto
+- Gabriel Casarini
 
 ## Objetivo
-Desenvolver colaborativamente um algoritmo em Portugol de…..
+Desenvolver colaborativamente um algoritmo em Portugol com um menu de operadores matemáticos.
 
-## Etapas realizadas por cada membro
+## Etapas realizadas por cada membro (Algoritmo)
+
+1 - Primeira Etapa: Erick realizou a criação inicial do menu onde também fez a operação de soma e subtração no código.
+
+2 - Segunda Etapa: Gabriel adicionou algumas mudanças no código (loop e uma opção para sair no menu), e acrescentou a operação de divisão e outra exibindo o resto.
+
+3 - Terceira Etapa: Andrei realizou a modificação do texto de saida do programa, além disso adicionou a operação de multiplicação ao código (Outras modificações menores também ocorreram).
 
 ### Fulano da Silva 
 - Como criou?
