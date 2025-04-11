@@ -231,7 +231,61 @@ Already up to date.
 compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
 $
 
+
 ### Comandos de Erick Fukumoto
+
+
+compuni@Lab6m36 MINGW64 ~
+$ git config --global user.name "Erick"
+
+compuni@Lab6m36 MINGW64 ~
+$ git config --global user.email "eshinfuku@gmail.com"
+
+compuni@Lab6m36 MINGW64 ~
+$ git config --global user.name
+Erick
+
+compuni@Lab6m36 MINGW64 ~
+$ git config --global user.email
+eshinfuku@gmail.com
+
+compuni@Lab6m36 MINGW64 ~
+$ rm -f ~/.ssh/id_rsa*
+
+compuni@Lab6m36 MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "eshinfuku@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/compuni/.ssh/id_rsa):
+Enter passphrase for "/c/Users/compuni/.ssh/id_rsa" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/compuni/.ssh/id_rsa
+Your public key has been saved in /c/Users/compuni/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:vKGWkSIHwABhBsjVm94mfTPuqO6mltLiqzeKsaMZCm8 eshinfuku@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|&+...            |
+|++   .           |
+|  .   o          |
+|   . o o         |
+|  . + = S        |
+|   o + B *       |
+|+ . . * + o      |
+|=OE+ o  ..       |
+|%B*o=+....       |
++----[SHA256]-----+
+
+compuni@Lab6m36 MINGW64 ~
+$ eval "$(ssh-agent -s)"
+Agent pid 765
+
+compuni@Lab6m36 MINGW64 ~
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/compuni/.ssh/id_rsa (eshinfuku@gmail.com)
+
+compuni@Lab6m36 MINGW64 ~
+$ clip < ~/.ssh/id_rsa.pub
+
 compuni@Lab6m36 MINGW64 ~
 $ git clone git@github.com:Erick8002/git@github.com:Gabrielhnc07/atividade_git_final.git
 Cloning into 'atividade_git_final'...
