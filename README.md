@@ -16,18 +16,20 @@ Desenvolver colaborativamente um algoritmo em Portugol com um menu de operadores
 
 3 - Terceira Etapa: Andrei realizou a modificação do texto de saida do programa, além disso adicionou a operação de multiplicação ao código (Outras modificações menores também ocorreram).
 
-### Fulano da Silva 
+### Gabriel Casarini
 - Como criou?
+  Realizei a criação do repositório no GitHub e em seguida adicionei os demais integrantes da equipe como colaboradores. Após isso, no repositório, criei os dois 
+  arquivos (ReadMe e algoritmo.por) onde nós realizamos as modificações conforme o desenvolvimento. 
 - Como Configurou o Git? não deixe exposto sua chave.
-- Criou o arquivo `algoritmo.pg` com a estrutura inicial:
-- fez o que? depois?...
+  Para configurar o Git precisei inicialmente adicionar meu nome e email. Em seguida realizei a listagem das chaves SSH e removi para assim criar uma chave SSH e poder conectar com o GitHub.
+- Adicionou lógica das operaçoes de divisão e divisão apresentando o resto, além disso coloquei um loop para que as opçoes tivessem um intervalo de 1 a 5 e 0 para sair.
+
 
 ### Ciclana Souza
 - Como Configurou o Git? não deixe exposto sua chave.
 - Fez `git pull` após o commit de Fulano.
-- Adicionou lógica de ... 
- 
 
+ 
 ### Beltrano Gomes 
 - Como Configurou o Git? não deixe exposto sua chave.
 - Fez `git pull` após o commit de Ciclana.
@@ -36,7 +38,97 @@ Desenvolver colaborativamente um algoritmo em Portugol com um menu de operadores
 
 ## Comandos utilizados
 Todos os comandos foram executados via terminal utilizando chave SSH:
-### Comandos de Fulano
+### Comandos de Gabriel
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 493 bytes | 4.00 KiB/s, done.
+From github.com:Gabrielhnc07/atividade_git_final
+ * branch            main       -> FETCH_HEAD
+   24163a5..890a241  main       -> origin/main
+Updating 24163a5..890a241
+Fast-forward
+ algoritmo.por | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   algoritmo.por
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git add .
+warning: in the working copy of 'algoritmo.por', LF will be replaced by CRLF the
+ next time Git touches it
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   algoritmo.por
+
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git commit -m "Alteração do código (Gabriel)"
+[main 5187bac] Alteração do código (Gabriel)
+ 1 file changed, 65 insertions(+), 16 deletions(-)
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git pull
+Already up to date.
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 898 bytes | 449.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Gabrielhnc07/atividade_git_final.git
+   890a241..5187bac  main -> main
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 401 bytes | 4.00 KiB/s, done.
+From github.com:Gabrielhnc07/atividade_git_final
+ * branch            main       -> FETCH_HEAD
+   5187bac..f7db18e  main       -> origin/main
+Updating 5187bac..f7db18e
+Fast-forward
+ algoritmo.por | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$ git pull
+Already up to date.
+
+compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
+$
 
 ### Comandos de Ciclana
 
