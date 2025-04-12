@@ -151,20 +151,6 @@ Enter passphrase for "/c/Users/compuni/.ssh/id_rsa" (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /c/Users/compuni/.ssh/id_rsa
 Your public key has been saved in /c/Users/compuni/.ssh/id_rsa.pub
-The key fingerprint is:
-SHA256:lyK9Kh+Ux3YF3Rgfaey9Aj0jQBc+AzEYv6V7HDL0lkk gabrielcasarini@edu.unifil.br
-The key's randomart image is:
-+---[RSA 4096]----+
-|       .+=o+o=.. |
-|       ...=.o.=. |
-|         o.Eoo.. |
-|       +. *==+. .|
-|      + S=+*o o .|
-|     . + =* .. . |
-|      . .. o  .  |
-|    .  o  .      |
-|     oo          |
-+----[SHA256]-----+
 
 compuni@Lab6m37 MINGW64 ~
 $ eval "$(ssh-agent -s)"
@@ -181,11 +167,6 @@ compuni@Lab6m37 MINGW64 ~
 $
 ssh -T git@github.com
 Hi Gabrielhnc07! You've successfully authenticated, but GitHub does not provide shell access.
-
-compuni@Lab6m37 MINGW64 ~
-$ git clone git@github.com:Gabrielhnc07/atividade_git_final.git
-fatal: destination path 'atividade_git_final' already exists and is not an empty
- directory.
 
 compuni@Lab6m37 MINGW64 ~
 $ git clone git@github.com:Gabrielhnc07/atividade_git_final.git
@@ -288,12 +269,8 @@ compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
 $ git pull
 Already up to date.
 
-compuni@Lab6m37 MINGW64 ~/atividade_git_final (main)
-$
-
 
 ### Comandos de Erick Fukumoto
-
 
 compuni@Lab6m36 MINGW64 ~
 $ git config --global user.name "Erick"
@@ -320,20 +297,6 @@ Enter passphrase for "/c/Users/compuni/.ssh/id_rsa" (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /c/Users/compuni/.ssh/id_rsa
 Your public key has been saved in /c/Users/compuni/.ssh/id_rsa.pub
-The key fingerprint is:
-SHA256:vKGWkSIHwABhBsjVm94mfTPuqO6mltLiqzeKsaMZCm8 eshinfuku@gmail.com
-The key's randomart image is:
-+---[RSA 4096]----+
-|&+...            |
-|++   .           |
-|  .   o          |
-|   . o o         |
-|  . + = S        |
-|   o + B *       |
-|+ . . * + o      |
-|=OE+ o  ..       |
-|%B*o=+....       |
-+----[SHA256]-----+
 
 compuni@Lab6m36 MINGW64 ~
 $ eval "$(ssh-agent -s)"
@@ -380,10 +343,6 @@ From github.com:Gabrielhnc07/atividade_git_final
 Already up to date.
 
 compuni@Lab6m36 MINGW64 ~/atividade_git_final (main)
-$ ^C
-
-
-compuni@Lab6m36 MINGW64 ~/atividade_git_final (main)
 $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -396,15 +355,6 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 compuni@Lab6m36 MINGW64 ~/atividade_git_final (main)
-
-
-
-
-
-
-
-
-
 Aborting commit due to empty commit message.
 
 compuni@Lab6m36 MINGW64 ~/atividade_git_final (main)
@@ -457,6 +407,7 @@ Fast-forward
  algoritmo.por | 8 +++++---
  1 file changed, 5 insertions(+), 3 deletions(-)
 
+
 ### Comandos de Andrei
 compuni@Lab6m38 MINGW64 ~/atividade_git_final (main)
 $ git config --global user.name
@@ -477,20 +428,6 @@ Enter passphrase for "/c/Users/compuni/.ssh/id_rsa" (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /c/Users/compuni/.ssh/id_rsa
 Your public key has been saved in /c/Users/compuni/.ssh/id_rsa.pub
-The key fingerprint is:
-SHA256:CkNI07MVDvIwW0t/6eLMryqbdZRKjjx5wqKhatVg/00 andrei.aguilar@edu.unifil.br
-The key's randomart image is:
-+---[RSA 4096]----+
-|  *.+ ..         |
-| . @o=.  .       |
-|  o ++o o        |
-|   +.  +         |
-|  . B + S        |
-| o * @ o E       |
-|o O = B o        |
-|o+.* . o .       |
-|* oo.....        |
-+----[SHA256]-----+
 
 compuni@Lab6m38 MINGW64 ~
 $ eval "$(ssh-agent -s)"
@@ -578,7 +515,6 @@ Your branch is up to date with 'origin/main'.
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   algoritmo.por
-
 
 compuni@Lab6m38 MINGW64 ~/atividade_git_final (main)
 $ git commit -m "Alteração do código(Andrei)"
